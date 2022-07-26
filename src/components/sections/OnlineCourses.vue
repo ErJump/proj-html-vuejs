@@ -5,7 +5,7 @@
       Latest <span class="ms_brand_color">Online Courses</span>
     </h3>
     <div class="row">
-      <CourseCard v-for="card in courses" :key="card.id"/>
+      <CourseCard v-for="card in courses" :key="card.id" :course="card"/>
     </div>
   </div>
 </template>
@@ -60,7 +60,7 @@ export default {
           },
           {
             title: "Management Skills: The Science of a Jolly Cooperation",
-            image: "motivation-course-02-480x298.jpg",
+            image: "motivation-course-01-480x298.jpg",
             cost: 19.99,
             lessons: 17,
             students: 50,
