@@ -29,15 +29,7 @@ export default {
 .ms_text_color{
   color: $textPrimaryColor;
 }
-.ms_font_family{
-  font-family: 'Times New Roman', Times, serif;
-}
-.ms_font_size_small{
-  font-size: .9rem;
-}
-.ms_font_size_big{
-  font-size: 3.5rem;
-}
+
 .ms_jumbo{
   background-image: url(../../../public/img/home-movation-shape-face.png);
   background-size: contain;
@@ -47,17 +39,5 @@ export default {
 .col-12.d-flex.flex-column.justify-content-around{
   height: 60%;
 }
-.ms_button{
-  background-color: $brandColor;
-  color: $bgMainColor;
-  border: none;
-  border-radius: 5px;
-  padding: 1rem 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-  &:hover{
-    background-color: $buttonHoverColor;
-  }
-}
+
 </style>

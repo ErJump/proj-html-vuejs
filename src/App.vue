@@ -24,8 +24,31 @@ export default {
 <style lang="scss">
 @import "~bootstrap/dist/css/bootstrap.css";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+@import "./assets/styles/variables.scss";
 
 /* *{
   outline: 1px solid red;
 } */
+.ms_font_family{
+  font-family: 'Times New Roman', Times, serif;
+}
+.ms_button{
+  background-color: $brandColor;
+  color: $bgMainColor;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  &:hover{
+    background-color: $buttonHoverColor;
+  }
+}
+.ms_font_size_small{
+  font-size: .9rem;
+}
+.ms_font_size_big{
+  font-size: 3.5rem;
+}
 </style>
