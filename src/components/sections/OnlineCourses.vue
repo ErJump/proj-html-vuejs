@@ -4,8 +4,14 @@
     <h3 class="ms_font_family ms_font_size_big ms_primary_color text-center mb-3">
       Latest <span class="ms_brand_color">Online Courses</span>
     </h3>
-    <div class="row pt-5">
+    <div class="row pt-5 mb-5">
       <CourseCard v-for="card in courses" :key="card.id" :course="card"/>
+    </div>
+    <div class="w-100 d-flex justify-content-center">
+      <button class="ms_button w-25">
+        View all courses
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </button>
     </div>
   </div>
 </template>
