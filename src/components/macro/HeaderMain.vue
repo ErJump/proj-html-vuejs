@@ -1,7 +1,7 @@
 <template>
   <div class="ms_header">
     <div class="container-lg">
-      <div class="row justify-content-between align-items-center">
+      <div class="row justify-content-between align-items-center mb-4">
         <div class="col-2">
           <img class="img-fluid" src="../../../public/img/dark-logo.png" alt="logo">
         </div>
@@ -20,53 +20,56 @@
           <i class="fa-brands fa-linkedin"></i>
         </div>
       </div>
+      <JumbotronHeader/>
     </div>
   </div>
 </template>
 
 <script>
 import NavLink from "../commons/NavLink.vue";
+import JumbotronHeader from "../sections/JumbotronHeader.vue";
 export default {
-    name: "HeaderMain",
-    data() {
-        return {
-            navLinks: [
-                {
-                    name: "Home",
-                    url: "#",
-                    id: 1,
-                },
-                {
-                    name: "Pages",
-                    url: "#",
-                    id: 2,
-                },
-                {
-                    name: "Courses",
-                    url: "#",
-                    id: 3,
-                },
-                {
-                    name: "Features",
-                    url: "#",
-                    id: 4,
-                },
-                {
-                    name: "Blog",
-                    url: "#",
-                    id: 5,
-                },
-                {
-                    name: "Shop",
-                    url: "#",
-                    id: 6,
-                },
-            ]
-        };
-    },
-    components: { 
-      NavLink, 
-    },
+  name: "HeaderMain",
+  data() {
+    return {
+      navLinks: [
+        {
+            name: "Home",
+            url: "#",
+            id: 1,
+        },
+        {
+            name: "Pages",
+            url: "#",
+            id: 2,
+        },
+        {
+            name: "Courses",
+            url: "#",
+            id: 3,
+        },
+        {
+            name: "Features",
+            url: "#",
+            id: 4,
+        },
+        {
+            name: "Blog",
+            url: "#",
+            id: 5,
+        },
+        {
+            name: "Shop",
+            url: "#",
+            id: 6,
+        },
+      ],
+    };
+  },
+  components: {
+  NavLink,
+  JumbotronHeader
+  },
 }
 
 </script>
