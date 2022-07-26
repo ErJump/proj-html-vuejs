@@ -9,12 +9,12 @@
         <h5 class="fs-5 ms_line_height mb-4">
           Want to learn how to be <span class="ms_color_brand">a beta toxic male</span>? How to be more toxic? How to be the idiot you've always wanted to be?
         </h5>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quas, voluptatibus fugiat placeat saepe, ducimus omnis dolorum corrupti illum veniam ratione repellendus quidem iure minima ipsum eaque nulla eum delectus.</span>
+        <span class="ms_secondary_color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quas, voluptatibus fugiat placeat saepe, ducimus omnis dolorum corrupti illum veniam ratione repellendus quidem iure minima ipsum eaque nulla eum delectus.</span>
       </div>
     </div>
     <div class="row pt-3">
       <div class="col-8">
-        <iframe class="rounded" width="90%" height="500px" src="https://www.youtube.com/embed/EZEfN5z8Mlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="rounded shadow" width="90%" height="500px" src="https://www.youtube.com/embed/EZEfN5z8Mlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="col-4 d-flex align-items-center">
         <div class="">

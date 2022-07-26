@@ -51,4 +51,10 @@ export default {
 .ms_font_size_big{
   font-size: 3.5rem;
 }
+.ms_primary_color{
+  color: $textPrimaryColor;
+}
+.ms_secondary_color{
+  color: $textSecondaryColor;
+}
 </style>

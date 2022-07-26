@@ -1,7 +1,7 @@
 <template>
   <div>
     <ImpressionsMain/>
-    <AboutMe/>
+    <AboutMe class="mb-5"/>
     <OnlineCourses/>
   </div>
 </template>
