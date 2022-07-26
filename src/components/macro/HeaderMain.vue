@@ -1,5 +1,5 @@
 <template>
-  <div class="ms_header">
+  <div class="ms_header position-relative">
     <div class="container-lg">
       <div class="row justify-content-between align-items-center mb-5">
         <div class="col-2">
