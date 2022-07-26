@@ -55,5 +55,9 @@ export default {
   padding: 1rem 1rem;
   font-weight: bold;
   cursor: pointer;
+  transition: all .3s ease-in-out;
+  &:hover{
+    background-color: $buttonHoverColor;
+  }
 }
 </style>
