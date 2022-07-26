@@ -81,12 +81,14 @@ export default {
   background-color: $bgSecondaryColor;
   padding: 20px;
   background-image: url(../../../public/img/background-pattern-wavify.png);
+  padding: 0;
+  padding-top: 20px;
 }
 .ms_social>i{
   font-size: 1.5rem;
+  cursor: pointer;
   &:hover{
     color: $brandColor;
-    cursor: pointer;
   }
 }
 </style>

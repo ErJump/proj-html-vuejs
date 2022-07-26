@@ -24,11 +24,9 @@ export default {
   color: $textPrimaryColor;
 }
 .nav-item.d-flex.align-items-center{
+  cursor: pointer;
   a:hover{
     color: $brandColor;
-  }
-  &:hover{
-    cursor: pointer;
   }
   i{
     font-size: .7rem;
