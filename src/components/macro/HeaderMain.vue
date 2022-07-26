@@ -1,7 +1,7 @@
 <template>
   <div class="ms_header">
     <div class="container-lg">
-      <div class="row justify-content-between align-items-center mb-4">
+      <div class="row justify-content-between align-items-center mb-5">
         <div class="col-2">
           <img class="img-fluid" src="../../../public/img/dark-logo.png" alt="logo">
         </div>
@@ -22,12 +22,14 @@
       </div>
       <JumbotronHeader/>
     </div>
+    <MenuHeader/>
   </div>
 </template>
 
 <script>
 import NavLink from "../commons/NavLink.vue";
 import JumbotronHeader from "../sections/JumbotronHeader.vue";
+import MenuHeader from "../commons/MenuHeader.vue";
 export default {
   name: "HeaderMain",
   data() {
@@ -67,8 +69,9 @@ export default {
     };
   },
   components: {
-  NavLink,
-  JumbotronHeader
+    NavLink,
+    JumbotronHeader,
+    MenuHeader,
   },
 }
 

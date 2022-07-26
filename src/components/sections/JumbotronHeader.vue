@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row pt-4">
     <div  class="col-6 d-flex align-items-center">
       <div class="col-12 d-flex flex-column justify-content-around">
         <h5 class="text-uppercase ms_font_size_small w-75">i'm a wingman</h5>
@@ -45,7 +45,7 @@ export default {
   background-position: bottom;
 }
 .col-12.d-flex.flex-column.justify-content-around{
-  height: 55%;
+  height: 60%;
 }
 .ms_button{
   background-color: $brandColor;
