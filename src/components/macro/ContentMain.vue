@@ -1,12 +1,16 @@
 <template>
   <div>
-    <h1>Main</h1>
+    <ImpressionsMain/>
   </div>
 </template>
 
 <script>
+import ImpressionsMain from '../sections/ImpressionsMain.vue';
 export default {
-  name: 'ContentMain',
+  name: "ContentMain",
+  components: { 
+    ImpressionsMain, 
+  }
 }
 </script>
 
