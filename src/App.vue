@@ -22,6 +22,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
 *{
   outline: 1px solid red;
 }
