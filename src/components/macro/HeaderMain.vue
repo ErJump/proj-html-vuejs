@@ -8,15 +8,8 @@
         <div class="col-6">
           <nav>
             <ul class="nav justify-content-around">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
+              <NavLink v-for="link in navLinks" :key="link.id"
+              :link="link"/>
             </ul>
           </nav>
         </div>
@@ -32,9 +25,50 @@
 </template>
 
 <script>
+import NavLink from "../commons/NavLink.vue";
 export default {
-  name: 'HeaderMain',
+    name: "HeaderMain",
+    data() {
+        return {
+            navLinks: [
+                {
+                    name: "Home",
+                    url: "#",
+                    id: 1,
+                },
+                {
+                    name: "Pages",
+                    url: "#",
+                    id: 2,
+                },
+                {
+                    name: "Courses",
+                    url: "#",
+                    id: 3,
+                },
+                {
+                    name: "Features",
+                    url: "#",
+                    id: 4,
+                },
+                {
+                    name: "Blog",
+                    url: "#",
+                    id: 5,
+                },
+                {
+                    name: "Shop",
+                    url: "#",
+                    id: 6,
+                },
+            ]
+        };
+    },
+    components: { 
+      NavLink, 
+    },
 }
+
 </script>
 
 <style scoped lang="scss">
