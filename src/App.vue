@@ -57,4 +57,7 @@ export default {
 .ms_secondary_color{
   color: $textSecondaryColor;
 }
+.ms_brand_color{
+  color: $brandColor;
+}
 </style>

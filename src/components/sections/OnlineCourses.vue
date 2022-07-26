@@ -4,7 +4,7 @@
     <h3 class="ms_font_family ms_font_size_big ms_primary_color text-center mb-3">
       Latest <span class="ms_brand_color">Online Courses</span>
     </h3>
-    <div class="row">
+    <div class="row pt-5">
       <CourseCard v-for="card in courses" :key="card.id" :course="card"/>
     </div>
   </div>
@@ -21,7 +21,7 @@ export default {
           {
             title: "How to be BAD: Create A Growth Mindset For Toxicity",
             image: "motivation-course-06-480x298.jpg",
-            cost: 30.00,
+            cost: [30 , "00"],
             lessons: 3,
             students: 50,
             id: 1,
@@ -29,15 +29,15 @@ export default {
           {
             title: "How to Build Confidence in Your Abilities",
             image: "motivation-course-05-480x298.jpg",
-            cost: 30.00,
+            cost: [30 , "00"],
             lessons: 1,
             students: 50,
             id: 2,
           },
           {
-            title: "Fail Machine - Focus in a DIstracted World",
+            title: "Fail Machine - Focus in a Distracted World",
             image: "motivation-course-04-480x298.jpg",
-            cost: 20.00,
+            cost: [20 , "00"],
             lessons: 5,
             students: 50,
             id: 3,
@@ -45,7 +45,7 @@ export default {
           {
             title: "Effective Time Management Mastery - Complete Guide",
             image: "motivation-course-03-480x298.jpg",
-            cost: 20.00,
+            cost: [20 , "00"],
             lessons: 18,
             students: 50,
             id: 4,
@@ -53,7 +53,7 @@ export default {
           {
             title: "Body Language Secrets Entrepreneurs",
             image: "motivation-course-02-480x298.jpg",
-            cost: 25.99,
+            cost: [25 , 99],
             lessons: 19,
             students: 50,
             id: 5,
@@ -61,7 +61,7 @@ export default {
           {
             title: "Management Skills: The Science of a Jolly Cooperation",
             image: "motivation-course-01-480x298.jpg",
-            cost: 19.99,
+            cost: [19 , 99],
             lessons: 17,
             students: 50,
             id: 6,
@@ -78,10 +78,5 @@ export default {
 .text-uppercase.text-center.ms_secondary_color.fs-6{
   font-weight: 400;
 }
-.ms_brand_color{
-  color: $brandColor;
-}
-
-
 
 </style>
