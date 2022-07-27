@@ -46,7 +46,7 @@ export default {
                   id: 1,
               },
               {
-                  name: "Blog Uopdated",
+                  name: "Blog Updated",
                   url: "#",
                   id: 2,
               },
@@ -61,14 +61,9 @@ export default {
                   id: 4,
               },
               {
-                  name: "Online Courses",
-                  url: "#",
-                  id: 5,
-              },
-              {
                   name: "Real Stories",
                   url: "#",
-                  id: 6,
+                  id: 5,
               },
           ],
         },

@@ -2,16 +2,11 @@
   <li class="nav-item d-flex align-items-center position-relative">
     <a class="nav-link ms_primary_color" :href="link.url">{{link.name}}</a>
     <i class="fa-solid fa-angle-down"></i>
-    <div class="position-absolute ms_dropdown" 
-    :class="{
-      ms_rigth: link.id > 3,
-      ms_left: link.id <= 3
-    }">
+    <div class="position-absolute ms_dropdown py-4 rounded shadow">
       <ul>
-        <li><a href="">Giggio gina</a></li>
-        <li><a href="">Giggio gina</a></li>
-        <li><a href="">Giggio gina</a></li>
-        <li><a href="">Giggio gina</a></li>
+        <li v-for="sublink in link.sublinks" :key="sublink.id">
+          <a :href="sublink.url">{{sublink.name}}</a>
+        </li>
       </ul>
     </div>
   </li>
@@ -59,9 +54,11 @@ ul{
 }
 .ms_dropdown{
   display: none;
-  background-color: white;
+  background-color: rgba(255,255,255,.5);
   top: 40px;
   width: 300px;
+  left: 0;
+  transform: translateX(-75px);
   li{
     padding: 5px 20px;
     a{
@@ -70,13 +67,12 @@ ul{
       &:hover{
         color: $brandColor;
       }
+      text-shadow: .5px .5px rgb(139, 139, 139);
     }
   }
+  &:hover a.nav-link{
+    color: $brandColor;
+  }
 }
-.ms_rigth{
-  right: 0;
-}
-.ms_left{
-  left: 0;
-}
+
 </style>
