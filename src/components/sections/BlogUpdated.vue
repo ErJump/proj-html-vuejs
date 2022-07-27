@@ -5,14 +5,16 @@
       Interesting <span class="ms_brand_color">articles updated</span> daily
     </h3>
     <div class="row">
-
+      <BlogCard/>
     </div>
   </div>
 </template>
 
 <script>
+import BlogCard from '../commons/BlogCard.vue';
 export default {
-  name: 'BlogUpdated',
+    name: "BlogUpdated",
+    components: { BlogCard }
 }
 </script>
 
