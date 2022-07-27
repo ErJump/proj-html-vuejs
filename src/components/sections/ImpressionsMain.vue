@@ -48,7 +48,7 @@
 .ms_bg{
   background-image: url("../../../public/img/background-pattern-grid-line-06.png");
   background-repeat: repeat;
-  width: 20%;
+  width: 23%;
 }
 .ms_color_brand{
   color: $brandColor;

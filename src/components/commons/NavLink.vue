@@ -70,9 +70,6 @@ ul{
       text-shadow: .5px .5px rgb(139, 139, 139);
     }
   }
-  &:hover a.nav-link{
-    color: $brandColor;
-  }
 }
 
 </style>
