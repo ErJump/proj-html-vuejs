@@ -79,10 +79,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../../assets/styles/variables.scss";
 
 .text-uppercase.text-center.ms_secondary_color.fs-6{
   font-weight: 400;
 }
-
 </style>

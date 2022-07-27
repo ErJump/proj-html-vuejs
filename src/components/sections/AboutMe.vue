@@ -14,7 +14,7 @@
     </div>
     <div class="row pt-3">
       <div class="col-8">
-        <iframe class="rounded shadow" width="90%" height="500px" src="https://www.youtube.com/embed/EZEfN5z8Mlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="rounded shadow" SameSite=Strict width="90%" height="500px" src="https://www.youtube.com/embed/EZEfN5z8Mlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="col-4 d-flex align-items-center">
         <div class="">
