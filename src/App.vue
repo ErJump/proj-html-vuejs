@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HeaderMain class="mb-5"/>
-    <ContentMain/>
+    <ContentMain class="mb-5"/>
     <FooterMain/>    
   </div>
 </template>
@@ -26,9 +26,9 @@ export default {
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 @import "./assets/styles/variables.scss";
 
-/* *{
+*{
   outline: 1px solid red;
-} */
+}
 .ms_font_family{
   font-family: 'Times New Roman', Times, serif;
 }
@@ -67,4 +67,5 @@ export default {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,.8);
   }
 }
+
 </style>
