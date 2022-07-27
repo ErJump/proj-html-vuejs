@@ -51,11 +51,4 @@ div>h5{
   color: $textPrimaryColor;
 }
 
-.ms_card{
-  transition: .5s;
-  cursor: pointer;
-  &:hover{
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.8);
-  }
-}
 </style>
