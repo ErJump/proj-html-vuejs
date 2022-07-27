@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="row align-items-center pt-5">
-      <div v-for="client in clients" :key="client.id" class="col-2 ms_client">
+      <div v-for="client in clients" :key="client.id" class="col-2 ms_client d-flex justify-content-center">
         <img :src="completeImgPath(client.img)" class="img-fluid" :alt="client.img">
       </div>
     </div>
