@@ -1,5 +1,5 @@
 <template>
-  <footer class="py-5">
+  <footer class="py-5 position-relative">
     <div class="container-lg">
       <div class="row pt-5">
         <div class="col-6 d-flex flex-column">
@@ -43,7 +43,13 @@
             </ul>
           </div>
         </div>
+        <div class="col-12 pt-5">
+          <h6 class="text-center ">© 2020 Maxcoach. All Rights Reserved</h6>
+        </div>
       </div>
+    </div>
+    <div class="ms_go_up position-absolute d-flex justify-content-center align-items-center">
+      <a href="#header"><i class="fa-solid fa-arrow-up-long text-white fa-2x"></i></a>
     </div>
   </footer>
 </template>
@@ -113,7 +119,7 @@ export default {
 footer{
   background-color: $textPrimaryColor;
 }
-div.col-6>span, div.col-6>div{
+div.col-6>span, div.col-6>div,div>h6{
   color: $footerTextColor;
   margin-bottom: 15px;
   &>i{
@@ -137,5 +143,13 @@ ul{
       }
     }
   }
+}
+.ms_go_up{
+  bottom: 40px;
+  right: 40px;
+  background-color: $brandColor;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
 }
 </style>
