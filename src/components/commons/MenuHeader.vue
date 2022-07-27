@@ -7,9 +7,11 @@
         <i class="fa-solid fa-book"></i>
         <i class="fa-solid fa-cart-shopping"></i>
       </div>
-      <div class="col-10 d-none">
-        <img class="img-fluid" src="/img/homepages-mega-menu-image-alt.jpg" alt="">
-      </div>
+      <transition>
+        <div class="col-10 d-none">
+          <img class="img-fluid" src="/img/homepages-mega-menu-image-alt.jpg" alt="">
+        </div>
+      </transition>
     </div>
   </div>
 </template>
@@ -41,4 +43,33 @@ export default {
     display: block!important;
   }
 }
+div.col-10{
+  animation: slide-in-right .5s;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 </style>
