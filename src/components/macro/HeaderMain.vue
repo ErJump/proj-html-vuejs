@@ -40,31 +40,31 @@ export default {
           url: "#",
           id: 1,
           sublinks: [
-              {
-                  name: "About Me",
-                  url: "#",
-                  id: 1,
-              },
-              {
-                  name: "Blog Updated",
-                  url: "#",
-                  id: 2,
-              },
-              {
-                  name: "Book Store",
-                  url: "#",
-                  id: 3,
-              },
-              {
-                  name: "Online Courses",
-                  url: "#",
-                  id: 4,
-              },
-              {
-                  name: "Real Stories",
-                  url: "#",
-                  id: 5,
-              },
+            {
+              name: "About Me",
+              url: "#",
+              id: 1,
+            },
+            {
+              name: "Blog Updated",
+              url: "#",
+              id: 2,
+            },
+            {
+              name: "Book Store",
+              url: "#",
+              id: 3,
+            },
+            {
+              name: "Online Courses",
+              url: "#",
+              id: 4,
+            },
+            {
+              name: "Real Stories",
+              url: "#",
+              id: 5,
+            },
           ],
         },
         {
