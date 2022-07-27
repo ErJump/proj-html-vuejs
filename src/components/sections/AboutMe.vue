@@ -19,7 +19,7 @@
       <div class="col-4 d-flex align-items-center">
         <div class="">
           <h4 class="ms_font_family ms_line_height_bigger mb-5">"I'm scared to get close, and I hate being alone. I long for that feeling to not feel at all, the higher I get, the lower I'll sink. I can't drown my demons, they know how to swim"</h4>
-          <img class="mb-3" src="../../../public/img/home-movation-shape-01.png" alt="shape">
+          <img class="mb-3" src="/img/home-movation-shape-01.png" alt="shape">
           <h5>Oliver Sykes</h5>
           <span class="text-uppercase ms_font_size_small">wingman</span>
         </div>

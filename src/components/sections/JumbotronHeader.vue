@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="col-6 ms_jumbo d-flex justify-content-center">
-      <img src="../../../public/img/home-movation-hero-image.png" alt="">
+      <img src="/img/home-movation-hero-image.png" alt="hero-image">
     </div>
   </div>
 </template>

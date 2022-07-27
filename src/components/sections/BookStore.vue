@@ -36,6 +36,7 @@ export default {
   components: { BookCard },
   data: function() {
     return {
+      imgPath: "/img/",
       books: [
         {
           title: "Beta man by Maxcoach",
@@ -80,7 +81,7 @@ export default {
   },
   methods: {
     completeImgPath: function(img) {
-      return `/img/${img}`;
+      return `${this.imgPath}${img}`;
     },
   },
 }

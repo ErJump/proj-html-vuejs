@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="col-6 ms_right_column">
-        <img src="../../../public/img/home-movation-testimonial-image.jpg" alt="testimonial-image">
+        <img src="/img/home-movation-testimonial-image.jpg" alt="testimonial-image">
       </div>
       <div class="position-absolute ms_slider_menu d-flex flex-column justify-content-center align-items-center">
         <i @click="goNext()" class="fa-solid fa-caret-up ms_secondary_color"></i>
