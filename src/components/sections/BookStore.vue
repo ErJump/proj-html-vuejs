@@ -1,7 +1,7 @@
 <template>
   <div class="container-lg pt-5">
     <div class="row">
-      <div class="col-6">
+      <div class="col-5">
         <h5 class="text-uppercase ms_secondary_color fs-6 mb-4">book store online</h5>
         <h3 class="ms_font_family fs-1 ms_primary_color mb-4">
           Be Beta With <br> <span class="ms_brand_color">Wingman's Book</span>
@@ -14,8 +14,11 @@
         </ul>
         <button class="ms_button">Get Free Ebook</button>
       </div>
-      <div class="col-6">
-        <BookCard/>
+      <div class="col-7">
+        <div class="row">
+          <BookCard v-for="book in books" :key="book.id"
+          :book="book"/>
+        </div>
       </div>
     </div>
   </div>
@@ -25,7 +28,25 @@
 import BookCard from "../commons/BookCard.vue";
 export default {
     name: "BookStore",
-    components: { BookCard }
+    components: { BookCard },
+    data: function() {
+      return {
+        books: [
+          {
+            title: "Beta man by Maxcoach",
+            img: "product-book-11-400x400.jpg",
+            price: [29,"00"],
+            id: 1,
+          },
+          {
+            title: "Fake man 4.0 by Maxcoach",
+            img: "product-book-10-400x400.jpg",
+            price: [39,"00"],
+            id: 1,
+          },
+        ]
+      }
+    }
 }
 </script>
 
@@ -41,6 +62,6 @@ ul{
   }
 }
 button.ms_button{
-  width: 35%;
+  width: 60%;
 }
 </style>
