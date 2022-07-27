@@ -4,10 +4,11 @@
     <h3 class="ms_font_family fs-1 ms_primary_color mb-5">
       Interesting <span class="ms_brand_color">articles updated</span> daily
     </h3>
-    <div class="row">
+    <div class="row mb-5">
       <BlogCard v-for="article in blogs" :key="article.id"
       :article="article"/>
     </div>
+    <div class="text-center fs-6 ms_brand_color text-uppercase"><span>view all posts</span></div>
   </div>
 </template>
 
@@ -55,5 +56,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../../assets/styles/variables.scss";
 
+div.ms_brand_color>span{
+  cursor: pointer;
+  border-bottom: 1px solid $brandColor;
+  display: inline-block;
+  height: 30px;
+}
 </style>
