@@ -8,7 +8,7 @@
       <CourseCard v-for="card in courses" :key="card.id" :course="card"/>
     </div>
     <div class="w-100 d-flex justify-content-center">
-      <button @click="getAllCourses()" class="ms_button w-25">
+      <button v-if="!allCoursesDisplayed" @click="getAllCourses()" class="ms_button w-25">
         View all courses
         <i class="fa-solid fa-arrow-right-long"></i>
       </button>
@@ -23,6 +23,7 @@ export default {
   components: { CourseCard },
   data: function() {
     return {
+      allCoursesDisplayed: false,
       courses: [
         {
           title: "How to be BAD: Create A Growth Mindset For Toxicity",
@@ -106,6 +107,7 @@ export default {
       this.allCourses.forEach(course => {
         this.courses.push(course);
       });
+      this.allCoursesDisplayed = true;
     },
   },
 }
