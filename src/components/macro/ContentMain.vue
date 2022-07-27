@@ -2,7 +2,7 @@
   <div>
     <ImpressionsMain/>
     <AboutMe class="mb-5"/>
-    <OnlineCourses/>
+    <OnlineCourses class="mb-5"/>
     <BookStore/>
   </div>
 </template>
