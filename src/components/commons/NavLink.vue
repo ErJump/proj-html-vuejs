@@ -1,7 +1,19 @@
 <template>
-  <li class="nav-item d-flex align-items-center">
+  <li class="nav-item d-flex align-items-center position-relative">
     <a class="nav-link ms_primary_color" :href="link.url">{{link.name}}</a>
     <i class="fa-solid fa-angle-down"></i>
+    <div class="position-absolute ms_dropdown" 
+    :class="{
+      ms_rigth: link.id > 3,
+      ms_left: link.id <= 3
+    }">
+      <ul>
+        <li><a href="">Giggio gina</a></li>
+        <li><a href="">Giggio gina</a></li>
+        <li><a href="">Giggio gina</a></li>
+        <li><a href="">Giggio gina</a></li>
+      </ul>
+    </div>
   </li>
 </template>
 
@@ -13,6 +25,11 @@ export default {
       type: Object,
       required: true,
     },
+  },
+  data() {
+    return {
+      linkId: this.link.id,
+    };
   },
 }
 </script>
@@ -32,5 +49,34 @@ export default {
     font-size: .7rem;
     transform: translateX(-5px);
   }
+  &:hover .ms_dropdown{
+    display: block;
+  }
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+.ms_dropdown{
+  display: none;
+  background-color: white;
+  top: 40px;
+  width: 300px;
+  li{
+    padding: 5px 20px;
+    a{
+      color: $textPrimaryColor;
+      text-decoration: none;
+      &:hover{
+        color: $brandColor;
+      }
+    }
+  }
+}
+.ms_rigth{
+  right: 0;
+}
+.ms_left{
+  left: 0;
 }
 </style>

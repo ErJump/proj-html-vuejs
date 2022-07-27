@@ -36,34 +36,176 @@ export default {
     return {
       navLinks: [
         {
-            name: "Home",
-            url: "#",
-            id: 1,
+          name: "Home",
+          url: "#",
+          id: 1,
+          sublinks: [
+              {
+                  name: "About Me",
+                  url: "#",
+                  id: 1,
+              },
+              {
+                  name: "Blog Uopdated",
+                  url: "#",
+                  id: 2,
+              },
+              {
+                  name: "Book Store",
+                  url: "#",
+                  id: 3,
+              },
+              {
+                  name: "Online Courses",
+                  url: "#",
+                  id: 4,
+              },
+              {
+                  name: "Online Courses",
+                  url: "#",
+                  id: 5,
+              },
+              {
+                  name: "Real Stories",
+                  url: "#",
+                  id: 6,
+              },
+          ],
         },
         {
-            name: "Pages",
-            url: "#",
-            id: 2,
+          name: "Pages",
+          url: "#",
+          id: 2,
+          sublinks: [
+            {
+              name: "Business Coaching",
+              url: "#",
+              id: 1,
+            },
+            {
+              name: "Gym Coaching",
+              url: "#",
+              id: 2,
+            },
+            {
+              name: "Health Coaching",
+              url: "#",
+              id: 3,
+            },
+            {
+              name: "Kitchen Coach",
+              url: "#",
+              id: 4,
+            },
+            {
+              name: "Motivation Coaching",
+              url: "#",
+              id: 5,
+            },
+          ],
         },
         {
-            name: "Courses",
-            url: "#",
-            id: 3,
+          name: "Courses",
+          url: "#",
+          id: 3,
+          sublinks: [
+            {
+              name: "How to be BAD",
+              url: "#",
+              id: 1,
+            },
+            {
+              name: "How to Build Confidence in Your Abilities",
+              url: "#",
+              id: 2,
+            },
+            {
+              name: "Fail Machine - Focus in a Distracted World",
+              url: "#",
+              id: 3,
+            },
+            {
+              name: "Effective Time Management Mastery",
+              url: "#",
+              id: 4,
+            },
+            {
+              name: "Body Language Secrets Entrepreneurs",
+              url: "#",
+              id: 5,
+            },
+            {
+              name: "Management Skills: The Science of a Jolly Cooperation",
+              url: "#",
+              id: 6,
+            },
+          ],
         },
         {
             name: "Features",
             url: "#",
             id: 4,
+            sublinks: [
+            {
+              name: "Coaching",
+              url: "#",
+              id: 1,
+            },
+            {
+              name: "Super Coaching",
+              url: "#",
+              id: 2,
+            },
+            {
+              name: "Giga Grind Mindset",
+              url: "#",
+              id: 3,
+            },
+          ],
         },
         {
-            name: "Blog",
-            url: "#",
-            id: 5,
+          name: "Blog",
+          url: "#",
+          id: 5,
+          sublinks: [
+            {
+              name: "How to Stay True to Your Personal Brand",
+              url: "#",
+              id: 1,
+            },
+            {
+              name: "5 Vital Lessons in 5 Years of Freelancing",
+              url: "#",
+              id: 2,
+            },
+            {
+              name: "11 Super Useful Tips for Small-Business Owners",
+              url: "#",
+              id: 3,
+            },
+            {
+              name: "How to Give Yourself Grace to Start Again",
+              url: "#",
+              id: 4,
+            },
+          ],
         },
         {
-            name: "Shop",
-            url: "#",
-            id: 6,
+          name: "Shop",
+          url: "#",
+          id: 6,
+          sublinks: [
+            {
+              name: "Beta man by Maxcoach",
+              url: "#",
+              id: 1,
+            },
+            {
+              name: "Fake man 4.0 by Maxcoach",
+              url: "#",
+              id: 2,
+            },
+          ],
         },
       ],
     };
