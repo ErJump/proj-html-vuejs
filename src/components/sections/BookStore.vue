@@ -1,5 +1,5 @@
 <template>
-  <div class="container-lg pt-5">
+  <div id="BookStore" class="container-lg pt-5">
     <div class="row mb-5">
       <div class="col-5">
         <h5 class="text-uppercase ms_secondary_color fs-6 mb-4">book store online</h5>

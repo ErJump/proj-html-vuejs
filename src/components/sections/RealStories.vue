@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid pt-5">
+  <div id="RealStories" class="container-fluid pt-5">
     <div class="row position-relative">
       <div class="col-6 ms_left_column d-flex justify-content-center align-items-center">
         <div class="d-flex flex-column align-items-center">

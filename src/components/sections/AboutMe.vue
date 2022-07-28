@@ -1,5 +1,5 @@
 <template>
-  <div class="container-lg py-5">
+  <div id="AboutMe" class="container-lg py-5">
     <h5 class="text-uppercase fs-6 ms_color_brand mb-4">About Me</h5>
     <div class="row mb-5">
       <div class="col-6">

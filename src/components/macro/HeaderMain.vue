@@ -42,27 +42,27 @@ export default {
           sublinks: [
             {
               name: "About Me",
-              url: "#",
+              url: "#AboutMe",
               id: 1,
             },
             {
               name: "Blog Updated",
-              url: "#",
+              url: "#Blog",
               id: 2,
             },
             {
               name: "Book Store",
-              url: "#",
+              url: "#BookStore",
               id: 3,
             },
             {
               name: "Online Courses",
-              url: "#",
+              url: "#Courses",
               id: 4,
             },
             {
               name: "Real Stories",
-              url: "#",
+              url: "#RealStories",
               id: 5,
             },
           ],

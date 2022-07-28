@@ -1,5 +1,5 @@
 <template>
-  <div class="container-lg pt-4">
+  <div id="Courses" class="container-lg pt-4">
     <h5 class="text-uppercase text-center ms_secondary_color fs-6 mb-4">begin your journey at maxcoach</h5>
     <h3 class="ms_font_family ms_font_size_big text-center mb-3">
       Latest <span class="ms_brand_color">Online Courses</span>
