@@ -1,5 +1,5 @@
 <template>
-  <div class="col-6 d-flex flex-column align-items-center justify-content-around position-relative">
+  <div v-scrollanimation class="col-6 d-flex flex-column align-items-center justify-content-around position-relative">
     <img class="img-fluid mb-3" :src="completeImgPath(book.img)" :alt="book.title">
     <h5 class="w-50 mb-4 text-center">{{book.title}}</h5>
     <h4 class="mb-2 ms_brand_color">${{book.price[0]}}.<span class="ms_font_custom_size">{{book.price[1]}}</span></h4>
@@ -67,4 +67,33 @@ div.col-6{
     }
   }
 }
+.enter{
+  animation: slide-in-right 1s;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 </style>
