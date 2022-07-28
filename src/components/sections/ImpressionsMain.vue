@@ -1,7 +1,7 @@
 <template>
   <div class="container-lg py-5 ">
     <div class="row justify-content-between">
-      <div class="col-4 ms_bg d-flex flex-column align-items-center"
+      <div v-scrollanimation class="col-4 ms_bg d-flex flex-column align-items-center"
       v-for="impression in impressions" :key="impression.id">
         <h2 class="ms_color_brand fs-1">{{impression.value}}</h2>
         <h4 class="text-uppercase fs-6">{{impression.name}}</h4>
@@ -52,5 +52,34 @@
 }
 .ms_color_brand{
   color: $brandColor;
+}
+
+.enter{
+  animation: tracking-in-expand 3s;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>

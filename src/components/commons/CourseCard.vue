@@ -52,7 +52,6 @@ div>h5{
 }
 
 .enter{
-  display: block;
   animation: slide-in-blurred-top 1s;
 }
 
