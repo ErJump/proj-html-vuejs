@@ -48,7 +48,7 @@
         </div>
       </div>
     </div>
-    <div class="ms_go_up position-absolute d-flex justify-content-center align-items-center">
+    <div class="ms_go_up position-fixed d-flex justify-content-center align-items-center">
       <a href="#header"><i class="fa-solid fa-arrow-up-long text-white fa-2x"></i></a>
     </div>
   </footer>
