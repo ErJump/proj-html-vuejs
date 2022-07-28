@@ -1,3 +1,4 @@
+![alt](src/assets/project-preview.gif)
 # proj-html-vuejs
 
 ## Project setup
