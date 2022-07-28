@@ -3,7 +3,7 @@
     <div class="row mb-5">
       <div class="col-5">
         <h5 class="text-uppercase ms_secondary_color fs-6 mb-4">book store online</h5>
-        <h3 class="ms_font_family fs-1 ms_primary_color mb-4">
+        <h3 class="ms_font_family fs-1 mb-4">
           Be Beta With <br> <span class="ms_brand_color">Wingman's Book</span>
         </h3>
         <ul class="mb-5">
@@ -104,5 +104,8 @@ button.ms_button{
 .ms_client{
   filter: grayscale(1);
   opacity: .4;
+}
+h3{
+  color: $buttonHoverColor
 }
 </style>

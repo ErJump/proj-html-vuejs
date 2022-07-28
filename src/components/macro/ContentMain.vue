@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ImpressionsMain/>
+    <ImpressionsMain class="mb-5"/>
     <AboutMe class="mb-5"/>
     <OnlineCourses class="mb-5"/>
     <BookStore class="mb-5"/>

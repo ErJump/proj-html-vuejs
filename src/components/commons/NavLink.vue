@@ -1,6 +1,6 @@
 <template>
   <li class="nav-item d-flex align-items-center position-relative">
-    <a class="nav-link ms_primary_color" :href="link.url">{{link.name}}</a>
+    <a class="nav-link" :href="link.url">{{link.name}}</a>
     <i class="fa-solid fa-angle-down"></i>
     <div class="position-absolute ms_dropdown py-4 rounded shadow">
       <ul>
@@ -37,8 +37,12 @@ export default {
 }
 .nav-item.d-flex.align-items-center{
   cursor: pointer;
-  a:hover{
-    color: $brandColor;
+  a{
+    color: $buttonHoverColor!important;
+    font-weight: 500;
+    &:hover{
+      color: $brandColor;
+    }
   }
   i{
     font-size: .7rem;
@@ -67,7 +71,6 @@ ul{
       &:hover{
         color: $brandColor;
       }
-      text-shadow: .5px .5px rgb(139, 139, 139);
     }
   }
 }

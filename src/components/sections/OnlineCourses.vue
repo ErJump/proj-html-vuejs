@@ -1,7 +1,7 @@
 <template>
   <div class="container-lg pt-4">
     <h5 class="text-uppercase text-center ms_secondary_color fs-6 mb-4">begin your journey at maxcoach</h5>
-    <h3 class="ms_font_family ms_font_size_big ms_primary_color text-center mb-3">
+    <h3 class="ms_font_family ms_font_size_big text-center mb-3">
       Latest <span class="ms_brand_color">Online Courses</span>
     </h3>
     <div class="row pt-5 mb-5">
@@ -114,8 +114,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../../assets/styles/variables.scss";
 
 .text-uppercase.text-center.ms_secondary_color.fs-6{
   font-weight: 400;
+}
+
+h3{
+  color: $buttonHoverColor;
 }
 </style>

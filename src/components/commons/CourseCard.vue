@@ -48,7 +48,7 @@ div>h4{
   color: $brandColor;
 }
 div>h5{
-  color: $textPrimaryColor;
+  color: $buttonHoverColor;
 }
 
 .enter{

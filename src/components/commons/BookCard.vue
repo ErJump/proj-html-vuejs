@@ -53,7 +53,7 @@ div.col-6{
   top: 55px;
   right: 30px;
   i{
-    background-color: white;
+    background-color: $bgMainColor;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -68,6 +68,9 @@ div.col-6{
       color: $brandColor;
     }
   }
+}
+h5{
+  color: $buttonHoverColor;
 }
 .enter{
   animation: slide-in-right 1s;
