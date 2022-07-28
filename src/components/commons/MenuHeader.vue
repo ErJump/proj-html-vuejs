@@ -7,11 +7,9 @@
         <i class="fa-solid fa-book"></i>
         <i class="fa-solid fa-cart-shopping"></i>
       </div>
-      <transition>
-        <div class="col-10 d-none">
-          <img class="img-fluid" src="/img/homepages-mega-menu-image-alt.jpg" alt="">
-        </div>
-      </transition>
+      <div class="col-10 d-none">
+        <img class="img-fluid" src="/img/homepages-mega-menu-image-alt.jpg" alt="">
+      </div>
     </div>
   </div>
 </template>
