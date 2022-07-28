@@ -227,6 +227,7 @@ export default {
 .ms_social>i{
   font-size: 1.5rem;
   cursor: pointer;
+  transition: .5s;
   &:hover{
     color: $brandColor;
   }
