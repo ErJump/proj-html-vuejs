@@ -7,7 +7,7 @@
           <span class="text-center fs-4 w-50 mb-5">{{stories[activeElement].content}}</span>
           <img class="ms_avatar mb-4" :src="completeImgPath(stories[activeElement].img)" :alt="stories[activeElement].img">
           <span class="fs-5 mb-3">{{stories[activeElement].name}}</span>
-          <span>{{stories[activeElement].position}}</span>
+          <span>/ {{stories[activeElement].position}}</span>
         </div>
       </div>
       <div class="col-6 ms_right_column">
@@ -33,25 +33,25 @@ export default {
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
           name: "Mina Hollace",
           img: "testimonial-avata-02.jpg",
-          position: "freelancer",
+          position: "Freelancer",
         },
         {
           content: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
           name: "Jerry Maxwell", 
           img: "testimonial-avata-01.jpg",
-          position: "designer",
+          position: "Designer",
         },
         {
           content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
           name: "Walter White", 
           img: "testimonial-avata-03.jpg",
-          position: "teacher",
+          position: "Teacher",
         },
         {
           content: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
           name: "Ted Green", 
           img: "testimonial-avata-04.jpg",
-          position: "businessman",
+          position: "Businessman",
         },
       ],
     }
