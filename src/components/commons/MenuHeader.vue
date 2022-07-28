@@ -14,7 +14,7 @@
       </div>
       <transition name="slide">
         <div v-if="isVisible" class="col-8 py-4">
-          <img class="img-fluid" src="/img/homepages-mega-menu-image-alt.jpg" alt="">
+          <img @click="activeImg = 1" class="img-fluid" :src="imgsList[activeImg].img" alt="">
         </div>
       </transition>
     </div>
@@ -28,6 +28,19 @@ export default {
   data: function() {
     return {
       isVisible: false,
+      activeImg: 0,
+      imgsList: [
+        {
+          id: 1,
+          img: '/img/homepages-mega-menu-image-alt.jpg',
+          alt: 'premium',
+        },
+        {
+          id: 2,
+          img: 'https://www.postitivita.it/wp-content/uploads/2021/04/Nyan-cat-NFT.gif',
+          alt: 'easterEgg',
+        }
+      ]
     };
   },
   methods: {

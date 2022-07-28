@@ -21,11 +21,6 @@ export default {
       required: true,
     },
   },
-  data() {
-    return {
-      linkId: this.link.id,
-    };
-  },
 }
 </script>
 
@@ -58,7 +53,7 @@ ul{
 }
 .ms_dropdown{
   display: none;
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255,255,255,.9);
   top: 40px;
   width: 300px;
   left: 0;
