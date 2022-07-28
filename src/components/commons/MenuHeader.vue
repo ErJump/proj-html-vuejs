@@ -1,15 +1,19 @@
 <template>
 
-  <div class="position-fixed ms_menu shadow rounded" @click="toggleMenu()">
+  <div class="position-fixed ms_menu shadow rounded">
     <div class="row">
-      <div class="col-2 d-flex flex-column gap-4 align-items-center justify-content-center">
+      <div class="col-1 d-flex align-items-center justify-content-center me-1">
+        <i v-if="!isVisible" @click="toggleMenu()" class="fa-solid fa-caret-left"></i>
+        <i v-else @click="toggleMenu()" class="fa-solid fa-caret-right"></i>
+      </div>
+      <div class="col-2 d-flex flex-column gap-4 align-items-center justify-content-center py-4">
         <i class="fa-solid fa-ruler"></i>
         <i class="fa-solid fa-circle-dot"></i>
         <i class="fa-solid fa-book"></i>
         <i class="fa-solid fa-cart-shopping"></i>
       </div>
       <transition name="slide">
-        <div v-if="isVisible" class="col-10">
+        <div v-if="isVisible" class="col-8 py-4">
           <img class="img-fluid" src="/img/homepages-mega-menu-image-alt.jpg" alt="">
         </div>
       </transition>
@@ -40,11 +44,12 @@ export default {
 .ms_menu{
   top: 200px;
   right: 0;
-  padding: 20px;
+  padding: 0 20px;
   background: $bgMainColor;
   color: $textPrimaryColor;
   z-index: 1;
   i{
+    color: $textSecondaryColor;
     cursor: pointer;
     transition: .5s;
     &:hover{
@@ -54,6 +59,13 @@ export default {
   img{
     cursor: pointer;
   }
+}
+
+div.col-1{
+  border-right: 1px solid $textSecondaryColor;
+}
+div.col-2{
+  transform: translateX(10px);
 }
 .slide-enter-active{
   animation: slide-in-right 1s;
