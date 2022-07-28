@@ -3,7 +3,7 @@
     <div class="container-lg">
       <div class="row justify-content-between align-items-center mb-5">
         <div class="col-2">
-          <img class="img-fluid" src="../../../public/img/dark-logo.png" alt="logo">
+          <img class="img-fluid" src="/img/dark-logo.png" alt="logo">
         </div>
         <div class="col-6">
           <nav>
