@@ -1,5 +1,6 @@
 <template>
-  <div class="position-fixed ms_menu shadow rounded">
+
+  <div class="position-fixed ms_menu shadow rounded" @click="toggleMenu()">
     <div class="row">
       <div class="col-2 d-flex flex-column gap-4 align-items-center justify-content-center">
         <i class="fa-solid fa-ruler"></i>
@@ -7,16 +8,29 @@
         <i class="fa-solid fa-book"></i>
         <i class="fa-solid fa-cart-shopping"></i>
       </div>
-      <div class="col-10 d-none">
-        <img class="img-fluid" src="/img/homepages-mega-menu-image-alt.jpg" alt="">
-      </div>
+      <transition name="slide">
+        <div v-if="isVisible" class="col-10">
+          <img class="img-fluid" src="/img/homepages-mega-menu-image-alt.jpg" alt="">
+        </div>
+      </transition>
     </div>
   </div>
+
 </template>
 
 <script>
 export default {
   name: 'MenuHeader',
+  data: function() {
+    return {
+      isVisible: false,
+    };
+  },
+  methods: {
+    toggleMenu: function() {
+      this.isVisible = !this.isVisible;
+    },
+  },
 }
 </script>
 
@@ -37,12 +51,16 @@ export default {
       color: $brandColor;
     }
   }
-  &:hover .col-10{
-    display: block!important;
+  img{
+    cursor: pointer;
   }
 }
-div.col-10{
-  animation: slide-in-right .5s;
+.slide-enter-active{
+  animation: slide-in-right 1s;
+}
+
+.slide-leave-active{
+  animation: slide-in-right 1s reverse;
 }
 
 @-webkit-keyframes slide-in-right {
