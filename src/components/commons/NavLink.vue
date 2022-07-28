@@ -37,8 +37,8 @@ export default {
 }
 .nav-item.d-flex.align-items-center{
   cursor: pointer;
-  a{
-    color: $buttonHoverColor!important;
+  >a{
+    color: $buttonHoverColor;
     font-weight: 500;
     &:hover{
       color: $brandColor;
@@ -69,7 +69,7 @@ ul{
       color: $textPrimaryColor;
       text-decoration: none;
       &:hover{
-        color: $brandColor;
+        color: $brandColor!important;
       }
     }
   }
