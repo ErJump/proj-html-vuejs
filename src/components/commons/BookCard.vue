@@ -43,11 +43,13 @@ export default {
 div.col-6{
   cursor: pointer;
   &:hover > div{
-    display: flex;
+    opacity: 1;
   }
 }
 .ms_menu_hover{
-  display: none;
+  opacity: 0;
+  transition: .5s;
+  display: flex;
   top: 55px;
   right: 30px;
   i{
