@@ -31,10 +31,11 @@ export default {
 }
 
 .ms_jumbo{
-  background-image: url(../../../public/img/home-movation-shape-face.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  background-image: url(../../../public/img/home-movation-shape-face-600x534.png);
+  background-size:auto;
+  background-repeat: repeat-x;
+  background-position: right;
+  background-attachment: fixed;
 }
 .col-12.d-flex.flex-column.justify-content-around{
   height: 60%;
